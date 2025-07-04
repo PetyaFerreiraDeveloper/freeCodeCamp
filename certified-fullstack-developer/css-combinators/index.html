@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing CSS Combinators</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Examples of CSS Combinators</h1>
+      <section>
+        <h2>Descendant Combinator</h2>
+        <p>
+          Here I will target all paragraphs within a div parent. Even ones that
+          are deeply nested inside other elements. Note that a
+          <code>space</code> is used between the parent and child selector.:
+        </p>
+        <div class="descendant-combinator">
+          <p>This is a paragraph inside a parent div.</p>
+          <div>
+            <p>This is a paragraph inside a child div.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Child Combinator</h2>
+        <p>
+          The child combinator (<code>></code>) in CSS is used to select
+          elements that are direct children of a specified parent element.
+        </p>
+        <div class="child-combinator">
+          <p>This is a direct child paragraph.</p>
+          <div>
+            <p>This is a nested paragraph and should not be styled.</p>
+          </div>
+          <p>
+            This is third paragraph but it is direct child of parent element
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>Next sibling Combinator</h2>
+        <p>
+          The next sibling combinator (<code>+</code>) in CSS is used to select
+          an element that is immediately preceded by a specified element.
+        </p>
+        <div class="next-sibling-combinator">
+          <p class="next-sibling-combinator__first-child">
+            This is the first paragraph.
+          </p>
+          <p>This is the second paragraph, which is a next sibling.</p>
+          <p>This is another paragraph, not a next sibling.</p>
+        </div>
+      </section>
+      <section>
+        <h2>Subsequent Sibling Combinator</h2>
+        <p>
+          The subsequent-sibling combinator (<code>~</code>) in CSS selects all
+          siblings of a specified element that come after it. They are not
+          required to be immediately adjacent, but they must share the same
+          parent.
+        </p>
+        <div class="subsequent-sibling-combinator">
+          <p class="subsequent-sibling-combinator__first-child">
+            This is the first paragraph.
+          </p>
+          <div>
+            <p>This is a nested paragraph inside a div.</p>
+          </div>
+          <p>third paragraph</p>
+          <p>fourth paragraph</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
