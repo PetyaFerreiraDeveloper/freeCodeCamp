@@ -1,0 +1,25 @@
+.myDialog {
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/*
+.myDialog::backdrop {
+  background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
+}
+*/
+
+#checkbox{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 4px;
+}
+
+#checkbox:checked {
+    background-color: red;
+    border-color: #000;
+}
