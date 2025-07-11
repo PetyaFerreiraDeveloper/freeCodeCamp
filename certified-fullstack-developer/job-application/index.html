@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
@@ -27,7 +28,6 @@
         <fieldset class="radio-group">
           <legend>Choose job type</legend>
           <div>
-            <label for="fulltime">Full Time</label>
             <input
               type="radio"
               value="Full-Time"
@@ -35,19 +35,21 @@
               name="availability"
               checked
             />
+            <label for="fulltime">Full Time</label>
           </div>
           <div>
-            <label for="fulltime">Part Time</label>
             <input
               type="radio"
               value="Part-Time"
               id="parttime"
               name="availability"
             />
+            <label for="parttime">Part Time</label>
           </div>
         </fieldset>
 
-        
+        <textarea id="message"></textarea>
+        <button type="submit">Submit</button>
       </form>
     </div>
   </body>
